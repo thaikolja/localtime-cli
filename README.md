@@ -1,6 +1,6 @@
 # Python Localtime CLI
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)] (https://www.python.org/downloads/) [![IPGeolocation API](https://img.shields.io/badge/IPGeolocation-API-orange.svg)](https://ipgeolocation.io/documentation/timezone-api.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python Version](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/) [![IPGeolocation API](https://img.shields.io/badge/IPGeolocation-API-orange.svg)](https://ipgeolocation.io/documentation/timezone-api.html)
 
 A Command-Line Interface (CLI) tool that retrieves the **local time and date of a given location** using the [IPGeolocation API](https://ipgeolocation.io/).
 
