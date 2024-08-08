@@ -20,7 +20,9 @@ build:
 test:
   stage: test
   script:
-    - python cli_tool.py --help
+    - pip install pytest
+    - pytest tests/
+    - python test-localtime-cli.py --help
   allow_failure: false
 
 deploy:
