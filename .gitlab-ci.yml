@@ -1,0 +1,24 @@
+image: python:latest
+
+stages:
+  - build
+  - deploy
+
+variables:
+  API_KEY: $API_KEY
+
+build:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - python -m compileall .
+  artifacts:
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying to production..."
+  only:
+    - main
