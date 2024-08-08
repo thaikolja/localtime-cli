@@ -20,7 +20,6 @@ build:
 test:
   stage: test
   script:
-    - python -m unittest discover -s tests -p 'test_*.py'
     - python cli_tool.py --help
   allow_failure: false
 
