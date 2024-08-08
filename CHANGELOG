@@ -1,0 +1,13 @@
+##Changelog
+
+## v0.0.2
+
+* Added support for creating a binary executable using PyInstaller
+* Improved documentation and usage examples
+* No changes to the underlying functionality of the tool
+
+## v0.0.1
+
+* Initial release of the `localtime` tool
+* Supports retrieving local time and date of a specified location using the IPGeolocation API
+* Configurable API key for secure access to the IPGeolocation API
