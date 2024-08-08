@@ -20,9 +20,9 @@ build:
 test:
   stage: test
   script:
-    - pip install pytest
-    - pytest tests/
-    - python test-localtime-cli.py --help
+    - pip install -r requirements.txt
+    - pip install -e .
+    - python -m unittest discover -s tests -p 'test_*.py'
   allow_failure: false
 
 deploy:
