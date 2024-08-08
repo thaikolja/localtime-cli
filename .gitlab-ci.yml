@@ -28,6 +28,5 @@ deploy:
   stage: deploy
   script:
     - echo "Deploying to production..."
-    - # Add your deployment script here
   only:
     - main
