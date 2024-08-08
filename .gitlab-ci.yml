@@ -21,7 +21,8 @@ test:
   stage: test
   script:
     - pip install -r requirements.txt
-    - python ./tests/setup.py install
+    - echo "from setuptools import setup, find_packages; setup(name='localtime-cli', version='1.0', packages=find_packages(), install_requires=['requests', 'dotenvfile'])" > setup.py
+    - python setup.py install
     - python -m unittest discover -s tests -p 'test_*.py'
   allow_failure: false
 
