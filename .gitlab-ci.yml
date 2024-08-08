@@ -21,7 +21,7 @@ test:
   stage: test
   script:
     - pip install -r requirements.txt
-    - python setup.py install
+    - python test/setup.py install
     - python -m unittest discover -s tests -p 'test_*.py'
   allow_failure: false
 
