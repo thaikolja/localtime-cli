@@ -2,6 +2,7 @@ image: python:latest
 
 stages:
   - build
+  - test
   - deploy
 
 variables:
@@ -16,9 +17,17 @@ build:
     paths:
       - dist/
 
+test:
+  stage: test
+  script:
+    - python -m unittest discover -s tests -p 'test_*.py'
+    - python cli_tool.py --help
+  allow_failure: false
+
 deploy:
   stage: deploy
   script:
     - echo "Deploying to production..."
+    - # Add your deployment script here
   only:
     - main
